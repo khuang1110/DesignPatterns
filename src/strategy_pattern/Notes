@@ -1,4 +1,7 @@
 Strategy Pattern
+Define a family of algorithms, encapsulate each one, and make them interchangeable. 
+The strategy pattern lets the algorithm vary independently from clients that use it.  
+
 
 Class Duck has methods to 
 quack()
@@ -13,3 +16,15 @@ which can cause unwanted error/behavior to other classes
 eg.when adding extra fly() method to Duck class, DecoyDuck class will also inherit fly
 
 
+
+use more composition, use less inheritance
+Duck's fly and quack behavior are not inheritance from Duck but composed from 2 other classes fly+quack
+fly and quack are encapsulated 
+
+When to use the strategy pattern
+-when you want to define a class that will have one behavior that is similar to other behaviors in a list 
+-I want the class object to be able to choose from 
+	-not flying
+	-fly with wings
+	-fly super fast 
+-when you need to use one of several behaviors dynamically 

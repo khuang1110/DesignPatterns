@@ -6,6 +6,14 @@ public class MiniDuckSimulator {
 		mallard.performFly();
 		mallard.performQuack();
 		
+		Duck model = new ModelDuck();
+		model.performFly();
+		model.performQuack();
+		
+		//setter used to change flybehavior at runtime
+		model.setFlyBehavior(new FlyRocketPowered());
+		model.performFly();
+		
 		
 	}
 
