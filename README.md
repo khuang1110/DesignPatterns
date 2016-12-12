@@ -1,2 +1,2 @@
 # Design Patterns
-Explanations and examples of software design patterns
+Explanations and examples for a list of software design patterns
