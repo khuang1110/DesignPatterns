@@ -1,0 +1,15 @@
+Strategy Pattern
+
+Class Duck has methods to 
+quack()
+swim()
+abstract display() #since every duck will look different 
+
+each type of ducks (MallardDuck, RedheadDuck) inherits and extends Duck
+
+Problem:
+however, if extra feature is added to Duck all other types of Ducks will inherit from it 
+which can cause unwanted error/behavior to other classes 
+eg.when adding extra fly() method to Duck class, DecoyDuck class will also inherit fly
+
+
